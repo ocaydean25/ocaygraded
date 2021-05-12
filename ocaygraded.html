@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grade Validation</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+
+	<div class="container">
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	<form>
+		<center> <img src="image/ccu.gif" > </center>
+		<br>
+		<br>
+		<h1> URDANETA CITY UNIVERSITY </h1>
+		<center><input  type="text" id="grade_input" class="form-control"></center>
+		<center><input type="submitt" onClick="sub()" value="Enter your Grade" class="btn btn-success" ></center>
+	</form>
+
+	
+	
+	
+	</div>
+	<script type="text/javascript">
+		
+		function sub(){
+		
+			var student_grade = document.getElementById('grade_input').value;
+
+			if (student_grade > 100) {
+				alert("Your Grade is over the limit");
+			}
+			else if (student_grade  <=100  && student_grade  >=75  ) {
+
+				alert("You're Passed");
+			}
+			else if (student_grade <=75){
+
+				alert("You're Failed");
+			}
+			else{
+				alert("Your Grade is Invalid");
+			}
+		}
+
+	</script>
+
+
+
+
+
+
+</body>
+</html>
